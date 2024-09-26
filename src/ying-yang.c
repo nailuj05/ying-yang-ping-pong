@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 #define SW 900
-#define GRIDNUM 21
+#define GRIDNUM 10
 #define CELL ceil(SW / (1.0f * GRIDNUM))
 #define GRAVITY 0.0f
 #define BALLS 2
