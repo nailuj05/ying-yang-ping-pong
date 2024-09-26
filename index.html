@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ying Yang Ping Pong</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+
+    h1 {
+      color: white;
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    #canvas {
+      display: block;
+      background-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Ying Yang Ping Pong</h1>
+  <canvas id="canvas"></canvas>
+  <script type="text/javascript">
+    var canvas = document.getElementById('canvas');
+
+    // Set the desired width and height for the canvas (Same as ying-yang.c)
+    canvas.width = 900;
+    canvas.height = 900;
+
+    // Emscripten will render the WebAssembly output to this canvas
+    var Module = {
+      canvas: document.getElementById('canvas')
+    };
+  </script>
+  <script async type="text/javascript" src="yingyang.js"></script>
+</body>
+
+</html>
