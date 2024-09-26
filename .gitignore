@@ -1,0 +1,4 @@
+builds/*
+raylib/src/*
+.clang-format
+noob
