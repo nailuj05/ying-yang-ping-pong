@@ -3,6 +3,9 @@
 Build using Raylib on Linux.
 Should work on any platform that supports Raylib.
 
+You can find a web version deployed here:
+https://nailuj05.github.io/ying-yang-ping-pong/
+
 ## Building
 
 Build the [build system](https://github.com/nailuj05/noob) yourself by compiling noob.c, after that use `./noob` to build and `./noob run` to build and run.
